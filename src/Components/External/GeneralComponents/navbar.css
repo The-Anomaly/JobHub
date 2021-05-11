@@ -1,0 +1,13 @@
+.jh-nav {
+    display: flex;
+    gap: 3rem;
+    padding: 1.8rem 2.5rem;
+    font-weight: 300;
+}
+.jh-nav-item {
+    cursor: pointer;
+    transition: 0.2s;
+}
+.jh-nav-item:hover {
+    transform: scale(1.1);
+}
