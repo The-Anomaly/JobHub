@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Switch, Route, BrowserRouter, Redirect } from "react-router-dom";
 import "./App.css";
+import Dashboard from "./Components/Dashboard/dashboard";
 import Start from "./Components/External/Start/StartPage";
 
 
@@ -11,7 +12,8 @@ class App extends Component {
         <div>
           <BrowserRouter>
             <Switch>
-              <Route exact path="/start" component={Start} />
+              <Route exact path="/" component={Start} />
+              <Route exact path="/dashboard" component={Dashboard} />
             </Switch>
           </BrowserRouter>
         </div>

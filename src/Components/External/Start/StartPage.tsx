@@ -6,6 +6,7 @@ import wave from "../../../assets/wave.png";
 import logo1 from "../../../assets/jobhub_logo.png";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useHistory } from "react-router-dom";
 
 const Start = () => {
   const [state, setState] = React.useState({
@@ -17,7 +18,7 @@ const Start = () => {
     password2: "",
   });
   const { signin, email, password, confirmpassword, email2, password2 } = state;
-
+  let history = useHistory();
   const signinSwitch = () => {
     setState({
       ...state,
@@ -43,9 +44,10 @@ const Start = () => {
       password: "",
       confirmpassword: "",
     });
+    notify("Signup successful!");
     return setTimeout(() => {
-      notify("Signup successful!");
-    }, 2000);
+      history.push("/dashboard")
+    }, 3000);
   };
   const signinBtn = () => {
     setState({
@@ -53,9 +55,10 @@ const Start = () => {
       email2: "",
       password2: "",
     });
+    notify("Signin successful!");
     return setTimeout(() => {
-      notify("Signin successful!");
-    }, 2000);
+      history.push("/dashboard")
+    }, 3000);
   };
   const notify = (message: string) => {
     window.scrollTo(-0, -0);

@@ -1,0 +1,348 @@
+.dash-container {
+    display: flex;
+}
+.jh-dash {
+    width: 82%;
+    padding: 3.5rem 1rem 1rem 2rem;
+}
+.jh-dash-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 1rem;
+}
+.dash-1 {
+    font-weight: 800;
+    font-size: 18px;
+}
+.dash-2 {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.dash-2-1 {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.dash-2-2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.dash-2-2-name {
+    font-size: 15px;
+    font-weight: 600;
+}
+.dash-2-2-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+.dash-2-2-avatar img {
+    width: 100%;
+}
+.dash-3 {
+    background: #541BCE;
+    color: #fff;
+    border-radius: 20px;
+    padding: 2rem 2.5rem 1.5rem;
+}
+.dash-3-ttl {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.5rem;
+}
+.dash-3-txt {
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 400px;
+    margin-bottom: 8px;
+}
+.dash-3-btn {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #541BCE;
+    font-weight: 600;
+    font-size: 14px;
+    height: 40px;
+    width: 120px;
+    border-radius: 14px;
+    margin-top: 1rem;
+}
+.dash-5-top {
+    display: flex;
+    justify-content: space-between;
+}
+.dash-5-top-ttl {
+    font-weight: 800;
+    font-size: 18px;
+}
+.dash-5-top-btn {
+    background: #541BCE;
+    border: 1px solid #541BCE;
+    color: #fff;
+    font-size: 14px;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    font-weight: 500;
+}
+.dash-5-list {
+    display: flex;
+    justify-content: space-between;
+    background: #e5e5e5;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 1rem;
+}
+.dash-5-list p {
+    margin-bottom: 0;
+}
+.designation {
+    padding: 5px 1rem;
+    border-radius: 20px;
+    width: 180px;
+    text-align: center;
+}
+.designation1 {
+    color: #602BD1;
+    background: rgba(84, 27, 206, 0.38);
+}
+.designation2 {
+    color: #DC2B2B;
+    background: rgba(220, 43, 43, 0.38);
+}
+.designation3 {
+    color: #2BDC72;
+    background: rgba(43, 220, 114, 0.38);
+}
+.ellipsis {
+    border: 2px solid #A89AC6;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #A89AC6;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 14px;
+}
+.ellipsis:before {
+    content: "";
+    border: 2px solid #A89AC6;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #A89AC6;
+    margin-right: 5px;
+    position: absolute;
+    left: -9px
+}
+.ellipsis:after {
+    content: "";
+    border: 2px solid #A89AC6;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #A89AC6;
+    margin-right: 5px;
+    position: absolute;
+    right: -14px;
+}
+.status {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.status:before {
+    content: "";
+    border-radius: 50%;
+    margin-right: 5px;
+    display: block;
+}
+.status1:before {
+    border: 5px solid rgba(84, 27, 206, 0.38);
+}
+.status2:before {
+    border: 5px solid rgba(220, 43, 43, 0.38);
+}
+.status3:before {
+    border: 5px solid rgba(43, 220, 114, 0.38);
+}
+.item1 {
+    max-width: 30%;
+    flex: 30%;
+}
+.item2 {
+    max-width: 30%;
+    flex: 30%;
+}
+.item3 {
+    flex: 22%;
+    max-width: 22%;
+}
+.item4 {
+    flex: 10%;
+    max-width: 24px;
+}
+.dash-5-list-ttl {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1rem;
+    font-weight: 600;
+}
+.dash-5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: -2rem;
+}
+.dash-6 {
+    background: #e5e5e5;
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    margin-top: 2rem;
+}
+.dash-6-name {
+    margin-top: 1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.dash-6-role {
+    font-size: 14px;
+    color: #A89AC6;
+}
+.dash-6-div {
+    background: #A89AC6;
+    width: 90%;
+    height: 1px;
+}
+.dash-6-list {
+    width: 100%;
+}
+.dash-6-list-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.dash-6-list-item-hd {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.dash-6-list-item-txt {
+    color: #A89AC6;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.dash-6-icon {
+    background: rgba(84, 27, 206, 0.38);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dash-6-icon-sec {
+    display: flex;
+    gap: 1rem;
+}
+.dash-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.dash-4-1st {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem 2rem;
+}
+.dash-4-date {
+    font-weight: 600;
+    font-size: 16px;
+}
+.dash-4-arrow-sec {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.dash-4-arrow-bod {
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dash-4-arrow-bod .arrow, .dash-4-arrow-bod .arrow:after, .dash-4-arrow-bod .arrow:before {
+    background: #fff;
+}
+.dash-4-arrow-bg {
+    background: #602BD1;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 20px;
+}
+.first-arrow {
+    transform: rotate(180deg);
+}
+.dash-4-from {
+    background: rgba(84, 27, 206, 0.28);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    justify-content: space-between;
+    height: 55px;
+}
+.dash-4-from p {
+    font-size: 12px;
+    max-width: 50px;
+    margin-bottom: 0;
+    color: #541BCE;
+    font-weight: 500;
+}
+.react-calendar {
+    border-radius: 20px;
+    background: #e5e5e5 !important;
+    border: none !important;
+    width: 100% !important;
+}
+.calendar .react-calendar__navigation {
+    display: none !important;
+}
+.calendar .react-calendar__tile {
+    background: none;
+    padding: 0.45em;
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+}
+.calendar .react-calendar__month-view__days__day--neighboringMonth {
+    color: transparent !important;
+}
+.calendar .react-calendar__month-view__weekdays__weekday {
+    font-weight: 600;
+    font-size: 14px;
+}
+abbr[title] {
+    text-decoration: none;
+}
