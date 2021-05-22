@@ -7,6 +7,11 @@
     padding: 2rem 2%;
     align-items: center;
     color: #fff;
+    justify-content: space-between;
+    overflow-y: auto;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
 }
 .sb-ttl {
     display: flex;
@@ -38,7 +43,7 @@
     font-weight: 300;
     text-align: left;
     justify-content: left;
-    margin-bottom: 5px;
+    margin-bottom: 1rem;
 }
 .sb-list-item-active {
     background: #fff;
@@ -117,8 +122,21 @@
         cursor: pointer;
         z-index: 3;
     }
-    .line {
-        background: #541BCE !important;
+    .dash-line1 {
+        height: 3px;
+        background: #541BCE;
+        width: 50%;
+    }
+    .dash-line2 {
+        height: 3px;
+        background: #541BCE;
+        width: 100%;
+    }
+    .dash-line3 {
+        height: 3px;
+        background: #541BCE;
+        width: 50%;
+        margin-left: 50%;
     }
     .sb-mobile {
         display: flex;

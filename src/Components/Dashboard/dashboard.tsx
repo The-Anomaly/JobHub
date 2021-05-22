@@ -56,7 +56,7 @@ const Dashboard = () => {
                             <img src={close} alt="close"/>
                         </div>
                     </div>
-                    <Calendar className="calendar" />
+                    <Calendar className="calendar" showNeighboringMonth={false} showNavigation={false} activeStartDate={new Date(2017, 0, 12)} />
                 </div>
                 <div className="dash-5-top">
                         <span className="dash-5-top-ttl">Recruitment Applications</span>

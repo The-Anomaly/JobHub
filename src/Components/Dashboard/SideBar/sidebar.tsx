@@ -25,11 +25,12 @@ const SideBar = () => {
     return (
         <>
         <div className="dash-hamburger" onClick={toggleNavBar}>
-            <div className="line1 line"></div>
-            <div className="line2 line"></div>
-            <div className="line3 line"></div>
+            <div className="dash-line1"></div>
+            <div className="dash-line2"></div>
+            <div className="dash-line3"></div>
         </div>
             <div className={showNav ? "sb-container sb-mobile" : "sb-container"}>
+                <div>
                 <div className="sb-ttl"><img className="sb-ttl-img" src={logo} alt="" /><h3 className="sb-ttl-txt">JobHub.com</h3></div>
                 <ul className="sb-list">
                     <li className="sb-list-item sb-list-item-active">Dashboard</li>
@@ -39,6 +40,7 @@ const SideBar = () => {
                     <li className="sb-list-item">Calendar</li>
                     <li className="sb-list-item">Settings</li>
                 </ul>
+                </div>
                 <div className="sb-upgrade">
                     <p className="sb-upgrade-txt">Upgrade to premium to unlock full features</p>
                     <p className="sb-upgrade-btn"><span className="arrow"></span></p>
