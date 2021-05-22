@@ -11,3 +11,66 @@
 .jh-nav-item:hover {
     transform: scale(1.1);
 }
+.jh-hamburger {
+    display: none;
+}
+@media (max-width: 950px) {
+    .jh-nav {
+        padding: 1.5rem 2rem;
+        font-size: 15px;
+        gap: 2rem;
+    }
+}
+@media (max-width: 800px) {
+    .jh-nav {
+        justify-content: flex-end;
+    }
+}
+@media (max-width: 600px) {
+    .jh-nav {
+        background: #541BCE;
+        z-index: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 14px;
+        height: 100vh;
+        width: 40vw;
+        min-width: 180px;
+        position: absolute;
+        align-items: center;
+        padding-top: 5rem;
+        display: none;
+        transition: 0.3s;
+    }
+    .show-nav {
+        display: flex;
+    }
+    .jh-hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        right: 1rem;
+        width: 24px;
+        height: 15px;
+        position: absolute;
+        top: 1rem;
+        cursor: pointer;
+        z-index: 3;
+    }
+    .line1 {
+        height: 3px;
+        background: #fff;
+        width: 50%;
+    }
+    .line2 {
+        height: 3px;
+        background: #fff;
+        width: 100%;
+    }
+    .line3 {
+        height: 3px;
+        background: #fff;
+        width: 50%;
+        margin-left: 50%;
+    }
+}

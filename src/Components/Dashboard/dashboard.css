@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-column-gap: 3rem;
-    grid-row-gap: 1rem;
+    grid-row-gap: 1.2rem;
 }
 .dash-1 {
     font-weight: 800;
@@ -345,4 +345,124 @@
 }
 abbr[title] {
     text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .dash-5-list {
+        flex-wrap: wrap;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+    .item1 {
+        order: 3;
+        flex: 45%;
+        max-width: 45%;
+    }
+    .item2 {
+        order: 1;
+        flex: 80%;
+        max-width: 80%;
+        justify-self: center
+    }
+    .item3 {
+        order: 4;
+        max-width: 40%;
+        flex: 40%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .item4 {
+        order: 2;
+        flex: 20%;
+    }
+    .dash-5-list-ttl {
+        display: none;
+    }
+    .dash-5 {
+        margin-top: -1rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .jh-dash {
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    /* .dash-3 {
+        grid-column-start: 1;
+    grid-column-end: 3;
+    }
+    .dash-4 {
+        grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    }
+    .dash-5-top {
+        grid-column-start: 1;
+    grid-column-end: 3;
+    }
+    .dash-5 {
+        margin-top: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+    .dash-6 {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        margin-top: 0;
+        flex-direction: row;
+    } */
+    .dash-5 {
+        margin-top: 0;
+    }
+    .dash-6 {
+        margin-top: 0;
+        flex-direction: row;
+    }
+    .dash-6, .calendar {
+        display: none;
+    }
+    .dash-5-list {
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .jh-dash-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .dash-2 {
+        width: 250px;
+        margin-left: auto;
+        margin-top: -2rem;
+    }
+    .dash-4 {
+        max-width: 300px;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .dash-3 {
+        padding: 1.5rem;
+    }
+    .dash-3-txt {
+        font-size: 14px;
+    }
+    .dash-3-ttl {
+        margin-bottom: 1rem;
+    }
+    .dash-5-top-ttl {
+        margin-right: 1rem;
+    }
+}
+@media (max-width: 450px) {
+    .jh-dash {
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
+    .dash-2 {
+        margin-top: -1rem;
+    }
 }

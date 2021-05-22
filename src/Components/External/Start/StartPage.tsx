@@ -69,6 +69,13 @@ const Start = () => {
       <div className="start-container">
         <div className="start-txt">
           <NavBar />
+          <div className="start-ttl-mobile">
+                <img className="start-ttl-img" src={logo} alt="" />
+                <h1>JobHub.com</h1>
+              </div>
+              <p className="start-content-txt-mobile">
+                A quicker way to hire and get hired
+              </p>
           <div>
             <div className="start-content">
               <div className="start-ttl">
@@ -78,6 +85,7 @@ const Start = () => {
               <p className="start-content-txt">
                 A quicker way to hire and get hired
               </p>
+              <div className="start-btn-sec">
               <button
                 className="start-btn start-btn-signup"
                 onClick={signupSwitch}
@@ -90,6 +98,7 @@ const Start = () => {
               >
                 Signin
               </button>
+              </div>
             </div>
             <img className="start-wave" src={wave} alt="wave" />
           </div>
@@ -170,7 +179,7 @@ const Start = () => {
       <ToastContainer
         enableMultiContainer
         containerId={"B"}
-        toastClassName="bg-info text-white"
+        toastClassName="bg-info text-white toastit"
         hideProgressBar={true}
         position={toast.POSITION.TOP_CENTER}
       />
