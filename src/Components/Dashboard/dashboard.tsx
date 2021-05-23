@@ -27,10 +27,10 @@ const Dashboard = () => {
                     <div className="dash-2-1">
                         <img src={search} alt="search" />
                         <img src={mail} alt="messages" />
-                        <img src={bell} alt="notification" />
+                        <img className="no-marg" src={bell} alt="notification" />
                     </div>
                     <div className="dash-2-2">
-                        <span>Onyinye</span>
+                        <span className="dash-2-2-name">Onyinye</span>
                         <span className="dash-2-2-avatar"><img src={avatar} alt="avatar" /></span>
                     </div>
                 </div>

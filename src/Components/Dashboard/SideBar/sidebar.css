@@ -8,7 +8,6 @@
     align-items: center;
     color: #fff;
     justify-content: space-between;
-    overflow-y: auto;
     height: 100vh;
     overflow-y: auto;
     position: fixed;
@@ -107,7 +106,6 @@
         position: fixed;
         z-index: 1;
         height: 100vh;
-        overflow-y: scroll;
         display: none;
     }
     .dash-hamburger {
@@ -152,5 +150,11 @@
 @media (min-width: 600px) {
     .dash-hamburger {
         transform: scale(1.2);
+    }
+}
+
+@media (min-height: 700px) {
+    .sb-container {
+        justify-content: flex-start;
     }
 }
