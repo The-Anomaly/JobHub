@@ -101,7 +101,9 @@
     align-items: center;
     font-size: 14px;
     font-weight: 500;
-    gap: 1rem;
+}
+.dash-5-list span {
+    margin-right: 1rem;
 }
 .dash-5-list p {
     margin-bottom: 0;
@@ -196,9 +198,11 @@
 .dash-5-list-ttl {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
     margin: 1rem;
     font-weight: 600;
+}
+.dash-5-list-ttl span {
+    margin-right: 1rem
 }
 .dash-5 {
     grid-column-start: 1;
@@ -216,13 +220,14 @@
     margin-top: 1rem;
 }
 .dash-6-name {
-    margin-top: 1rem;
+    margin-top: 0.8rem;
     font-weight: 600;
     margin-bottom: 0;
 }
 .dash-6-role {
     font-size: 14px;
     color: #A89AC6;
+    margin-bottom: 0.8rem;
 }
 .dash-6-div {
     background: #A89AC6;
@@ -231,15 +236,16 @@
 }
 .dash-6-list {
     width: 100%;
+    margin: 0.8rem 0;
 }
 .dash-6-list-item {
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 13px;
+    margin-bottom: 2px;
 }
 .dash-6-list-item-hd {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     margin-bottom: 0;
 }
@@ -256,10 +262,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 1rem;
 }
 .dash-6-icon-sec {
     display: flex;
-    gap: 1rem;
 }
 .dash-4 {
     display: flex;
@@ -332,14 +338,20 @@
     background: none;
     padding: 0.45em 0.4em;
     color: #000;
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
     /* flex-basis: 12.2857% !important;
     max-width: 12.2857% !important; */
 }
+.calendar .react-calendar__month-view__weekdays {
+    display: flex;
+    text-transform: uppercase;
+    text-align: center;
+}
 .calendar .react-calendar__month-view__weekdays__weekday {
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 13px;
 }
 abbr[title] {
     text-decoration: none;
@@ -348,20 +360,25 @@ abbr[title] {
     background: #541BCE;
     color: #fff;
     border-radius: 50%;
-    padding: 5px;
+    padding: 1px 4px;
 }
 .react-calendar__month-view__days button:nth-child(28) abbr {
     background: #DC6B2B;
     color: #fff;
     border-radius: 50%;
-    padding: 5px;
+    padding: 2px 3px;
 }
 
 @media screen and (max-width: 1200px) {
     .dash-5-list {
         flex-wrap: wrap;
         padding: 1.5rem;
-        gap: 1.5rem;
+        padding-bottom: 0;
+        /* gap: 1.5rem; */
+    }
+    .dash-5-list span {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
     }
     .item1 {
         order: 3;
@@ -485,4 +502,8 @@ abbr[title] {
     .dash-2 {
         margin-top: -1rem;
     }
+}
+.no-marg {
+    margin-bottom: 0 !important;
+    margin-right: 0 !important;
 }

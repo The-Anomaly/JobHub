@@ -12,8 +12,8 @@ import message from "../../assets/message.png";
 import "./SideBar/sidebar.css"
 import close from "../../assets/close.png";
 import Calendar from "react-calendar";
-import 'react-calendar/dist/Calendar.css'
-import "../External/GeneralComponents/navbar.css"
+// import 'react-calendar/dist/Calendar.css'
+import "../External/GeneralComponents/navbar.css";
 
 const Dashboard = () => {
     return (
@@ -67,7 +67,7 @@ const Dashboard = () => {
                         <span className="item1">Full Name</span>
                         <span className="item2">Designation</span>
                         <span className="item3">Status</span>
-                        <span className="item4"></span>
+                        <span className="item4 no-marg"></span>
                     </div>
                     <div>
                         <div className="dash-5-list">
@@ -80,7 +80,7 @@ const Dashboard = () => {
                             <span className="item3">
                                 <p className="status status1">Schedule Interview</p>
                             </span>
-                            <span className="item4">
+                            <span className="item4 no-marg">
                                 <span className="ellipsis"></span>
                             </span>
                         </div>
@@ -94,7 +94,7 @@ const Dashboard = () => {
                             <span className="item3">
                                 <p className="status status2">Final Interview</p>
                             </span>
-                            <span className="item4">
+                            <span className="item4 no-marg">
                                 <span className="ellipsis"></span>
                             </span>
                         </div>
@@ -108,7 +108,7 @@ const Dashboard = () => {
                             <span className="item3">
                                 <p className="status status3">Give Feedback</p>
                             </span>
-                            <span className="item4">
+                            <span className="item4 no-marg">
                                 <span className="ellipsis"></span>
                             </span>
                         </div>
@@ -121,7 +121,7 @@ const Dashboard = () => {
                     <div className="dash-6-icon-sec">
                         <span className="dash-6-icon"><img src={phone} alt="" /></span>
                         <span className="dash-6-icon"><img src={mail2} alt="" /></span>
-                        <span className="dash-6-icon"><img src={message} alt="" /></span>
+                        <span className="dash-6-icon no-marg"><img src={message} alt="" /></span>
                     </div>
                     <hr className="dash-6-div" />
                     <div className="dash-6-list">
