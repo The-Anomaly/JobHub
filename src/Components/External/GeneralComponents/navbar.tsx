@@ -26,7 +26,7 @@ const NavBar = () => {
             <span className="jh-nav-item">About us</span>
             <span className="jh-nav-item">Services</span>
             <span className="jh-nav-item">Contact</span>
-            <span className="jh-nav-item">FAQs</span>
+            <span className="jh-nav-item no-marg">FAQs</span>
         </div>
         <div className="jh-hamburger" onClick={toggleNavBar}>
             <div className="line1"></div>

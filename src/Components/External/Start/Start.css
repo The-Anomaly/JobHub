@@ -149,7 +149,6 @@
         width: 90%;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
     }
     .start-content-txt-mobile {
         font-size: 12px;
@@ -187,7 +186,6 @@
     .start-btn-sec {
         margin-top: 6.5rem;
         width: 100%;
-        gap: 1rem;
     }
 }
 .toastit {

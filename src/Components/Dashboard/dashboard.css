@@ -9,7 +9,7 @@
 .jh-dash-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-column-gap: 3rem;
+    grid-column-gap: 2.5rem;
     grid-row-gap: 1.2rem;
 }
 .dash-1 {
@@ -264,7 +264,6 @@
 .dash-4 {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
     grid-row-start: 2;
     grid-row-end: 4;
     grid-column-start: 2;
@@ -327,6 +326,7 @@
     border: none !important;
     width: 100% !important;
     padding: 5px;
+    margin-top: 1.2rem;
 }
 .calendar .react-calendar__tile {
     background: none;
@@ -441,6 +441,7 @@ abbr[title] {
     .jh-dash-content {
         display: flex;
         flex-direction: column;
+        gap: 0;
     }
     .dash-2 {
         width: 250px;
@@ -454,6 +455,12 @@ abbr[title] {
     .jh-dash {
         padding-left: 1rem;
         padding-top: 2.5rem;
+    }
+    .dash-1, .dash-2, .dash-3, .dash-5, .dash-6, .dash-5-top {
+        margin-bottom: 1.2rem;
+    }
+    .dash-4 {
+        margin-bottom: 2rem;
     }
 }
 
